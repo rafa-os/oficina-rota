@@ -21,7 +21,7 @@ function entradaSenha(array $dados): string
 
 function e(mixed $valor): string
 {
-    return htmlspecialchars((string) ($valor ?? ''), ENT_QUOTES, 'UTF-8');
+    return htmlspecialchars(is_scalar($valor) ? (string) $valor : '', ENT_QUOTES, 'UTF-8');
 }
 
 function url(string $pagina, array $params = []): string
@@ -59,6 +59,7 @@ function campo(string $rotulo, string $nome, array $dados, string $tipo = 'text'
 
 function selecao(string $rotulo, string $nome, array $opcoes, mixed $atual, bool $obrigatorio = true): void
 {
+    $atual = is_scalar($atual) ? $atual : '';
     echo '<label>' . e($rotulo) . '<select name="' . e($nome) . '" ' . ($obrigatorio ? 'required' : '') . '><option value="">Selecione</option>';
     foreach ($opcoes as $id => $nomeOpcao) {
         echo '<option value="' . e($id) . '" ' . ((string) $id === (string) $atual ? 'selected' : '') . '>' . e($nomeOpcao) . '</option>';

@@ -110,6 +110,15 @@ try {
                         $dados['fim'] = date('Y-m-d\TH:i', strtotime($atual['fim']));
                     }
                 }
+                if ($pagina === 'ordens' && !$isAdmin) {
+                    $observacoes = texto($dados, 'observacoes', $atual['observacoes']);
+                    $situacao = texto($dados, 'situacao', $atual['situacao']);
+                    $dados = $atual;
+                    $dados['inicio'] = date('Y-m-d\TH:i', strtotime($atual['inicio']));
+                    $dados['fim'] = date('Y-m-d\TH:i', strtotime($atual['fim']));
+                    $dados['observacoes'] = $observacoes;
+                    $dados['situacao'] = $situacao;
+                }
                 if ($pagina === 'ordens') {
                     $historico = $oficina->todos('SELECT o.*, u.nome FROM operacoes o JOIN usuarios u ON u.id = o.usuario_id WHERE ordem_numero = ? ORDER BY o.id DESC', [$id]);
                 }

@@ -3,3 +3,4 @@ config/local.php
 .env
 .trabalho/
 __pycache__/
+!docs/testes/servidor.log
