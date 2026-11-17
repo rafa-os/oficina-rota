@@ -1,0 +1,13 @@
+{
+  "host_configurado": "127.0.0.1",
+  "porta_configurada": "3306",
+  "banco_configurado": "oficina_rota",
+  "conexao": {
+    "servidor": "DESKTOP-NHSL0BB",
+    "porta": 3306,
+    "versao": "8.0.43",
+    "distribuicao": "MySQL Community Server - GPL",
+    "banco": "oficina_rota",
+    "usuario": "root@localhost"
+  }
+}

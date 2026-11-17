@@ -1,0 +1,7 @@
+config/local.php
+*.log
+.env
+.trabalho/
+__pycache__/
+!docs/testes/servidor.log
+!docs/testes/mariadb-anterior/servidor.log

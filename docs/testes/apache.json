@@ -1,0 +1,149 @@
+{
+  "executado_em": "2026-11-16T22:15:08.352083-03:00",
+  "testes": [
+    {
+      "teste": "Página inicial pelo Apache",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http_final": 200,
+        "url": "http://127.0.0.1:8087/oficina-rafael/public/index.php"
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de .git/HEAD",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de .github/PULL_REQUEST.md",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de database/banco.sql",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de config/banco.php",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de docs/REQUISITOS.md",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Bloqueio HTTP de tests/banco_teste.php",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "CSS público",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 200
+      }
+    },
+    {
+      "teste": "Login pelo módulo PHP do Apache",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "url": "http://127.0.0.1:8087/oficina-rafael/public/index.php?pagina=ordens"
+      }
+    },
+    {
+      "teste": "Fonte Arial no navegador",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "fonte": "Arial, sans-serif"
+      }
+    },
+    {
+      "teste": "Consulta Apache: clientes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 200
+      }
+    },
+    {
+      "teste": "Consulta Apache: veiculos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 200
+      }
+    },
+    {
+      "teste": "Consulta Apache: agenda",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 200
+      }
+    },
+    {
+      "teste": "Consulta Apache: usuarios",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 200
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 1440 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 1440,
+        "transbordamento": false
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 768 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 768,
+        "transbordamento": false
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 390 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 390,
+        "transbordamento": false
+      }
+    },
+    {
+      "teste": "Sessões independentes no mesmo navegador",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "logout_de": "Oficina Rota",
+        "outro_login_preservado": true
+      }
+    }
+  ],
+  "servidor": "Apache/2.4.58 (Win64) PHP/8.2.12",
+  "cookies": [
+    {
+      "nome": "sessao_oficina_rota",
+      "httpOnly": true,
+      "sameSite": "Lax"
+    },
+    {
+      "nome": "sessao_ponto_motor",
+      "httpOnly": true,
+      "sameSite": "Lax"
+    }
+  ]
+}

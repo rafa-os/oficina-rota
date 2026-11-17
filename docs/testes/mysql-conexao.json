@@ -1,0 +1,16 @@
+{
+  "projeto": "oficina-rafael",
+  "host": "127.0.0.1",
+  "porta_configurada": "3306",
+  "banco": "oficina_rota",
+  "servidor": {
+    "versao": "8.0.43",
+    "distribuicao": "MySQL Community Server - GPL",
+    "servidor": "DESKTOP-NHSL0BB",
+    "porta": 3306,
+    "usuario": "root@localhost"
+  },
+  "tabelas_antes": 0,
+  "importacao": "executada",
+  "tabelas_depois": 6
+}

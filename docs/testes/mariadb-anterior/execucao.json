@@ -1,0 +1,553 @@
+{
+  "projeto": "oficina-rafael",
+  "executado_em": "2026-11-16T19:59:30.534998-03:00",
+  "fuso_agendamento": "America/Sao_Paulo",
+  "banco": "oficina_rota_teste",
+  "servidor_banco": {
+    "banco": "oficina_rota_teste",
+    "versao": "10.4.32-MariaDB"
+  },
+  "php": "PHP 8.2.12 (cli) (built: Oct 24 2023 21:15:15) (ZTS Visual C++ 2019 x64)",
+  "navegador": "Chrome headless via Playwright",
+  "testes": [
+    {
+      "teste": "Sintaxe PHP",
+      "resultado": "APROVADO",
+      "detalhes": [
+        {
+          "arquivo": "index.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\bootstrap.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\Suporte.php",
+          "status": 0
+        },
+        {
+          "arquivo": "config\\banco.php",
+          "status": 0
+        },
+        {
+          "arquivo": "public\\index.php",
+          "status": 0
+        },
+        {
+          "arquivo": "tests\\banco_teste.php",
+          "status": 0
+        },
+        {
+          "arquivo": "tests\\concorrencia.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\controllers\\SistemaController.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\models\\Oficina.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\views\\formulario.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\views\\layout.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\views\\listagem.php",
+          "status": 0
+        },
+        {
+          "arquivo": "app\\views\\usuarios.php",
+          "status": 0
+        }
+      ]
+    },
+    {
+      "teste": "Login do administrador",
+      "resultado": "APROVADO",
+      "detalhes": "http://127.0.0.1:54337/index.php?pagina=ordens"
+    },
+    {
+      "teste": "Cenário 1 — cadastro permitido",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "id": 7,
+        "registro_banco": {
+          "id": 7,
+          "veiculo_id": 1,
+          "mecanico_id": 2,
+          "descricao": "Cenário 1: revisão de demonstração",
+          "observacoes": "",
+          "inicio": "2026-11-18 09:00:00",
+          "fim": "2026-11-18 10:00:00",
+          "situacao": "agendada",
+          "criado_em": "2026-11-16 19:59:22",
+          "atualizado_em": "2026-11-16 19:59:22"
+        },
+        "evidencia": "cenario1.png"
+      }
+    },
+    {
+      "teste": "Auditoria do cadastro",
+      "resultado": "APROVADO",
+      "detalhes": [
+        {
+          "ordem_numero": 7,
+          "usuario_id": 1,
+          "acao": "cadastro",
+          "criado_em": "2026-11-16 19:59:22"
+        }
+      ]
+    },
+    {
+      "teste": "Cenário 2 — bloqueio de conflito no cadastro",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 409,
+        "mensagem": "Agendamento não permitido: o mecânico selecionado já possui uma ordem de serviço nesse horário. Selecione outro horário ou mecânico.",
+        "total_antes_depois": [
+          7,
+          7
+        ],
+        "evidencia": "cenario2.png"
+      }
+    },
+    {
+      "teste": "Cenário 3 — alteração com conflito",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 409,
+        "registro_antes": {
+          "id": 8,
+          "veiculo_id": 1,
+          "mecanico_id": 2,
+          "descricao": "Ordem auxiliar para alteração",
+          "observacoes": "",
+          "inicio": "2026-11-18 11:00:00",
+          "fim": "2026-11-18 12:00:00",
+          "situacao": "agendada",
+          "criado_em": "2026-11-16 19:59:23",
+          "atualizado_em": "2026-11-16 19:59:23"
+        },
+        "registro_depois": {
+          "id": 8,
+          "veiculo_id": 1,
+          "mecanico_id": 2,
+          "descricao": "Ordem auxiliar para alteração",
+          "observacoes": "",
+          "inicio": "2026-11-18 11:00:00",
+          "fim": "2026-11-18 12:00:00",
+          "situacao": "agendada",
+          "criado_em": "2026-11-16 19:59:23",
+          "atualizado_em": "2026-11-16 19:59:23"
+        },
+        "mensagem": "Agendamento não permitido: o mecânico selecionado já possui uma ordem de serviço nesse horário. Selecione outro horário ou mecânico.",
+        "evidencia": "cenario3.png"
+      }
+    },
+    {
+      "teste": "Falhas não geram auditoria de sucesso",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "ordem": 8,
+        "operacoes": 1
+      }
+    },
+    {
+      "teste": "Atualização no próprio horário",
+      "resultado": "APROVADO",
+      "detalhes": [
+        {
+          "inicio": "2026-11-18 11:00:00",
+          "fim": "2026-11-18 12:00:00",
+          "observacoes": "Atualização sem mudança de horário."
+        }
+      ]
+    },
+    {
+      "teste": "Intervalos contíguos permitidos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "ordem": 9
+      }
+    },
+    {
+      "teste": "Filtros combinados no servidor",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "linhas": 3,
+        "url": "http://127.0.0.1:54337/index.php?pagina=ordens&busca=Mariana&data=2026-11-18"
+      }
+    },
+    {
+      "teste": "Paginação do backend",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "linhas_primeira_pagina": 5
+      }
+    },
+    {
+      "teste": "Página seguinte sem duplicação",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "primeira": [
+          "#8",
+          "#9",
+          "#7",
+          "#4",
+          "#2"
+        ],
+        "segunda": [
+          "#3",
+          "#1",
+          "#6",
+          "#5"
+        ]
+      }
+    },
+    {
+      "teste": "Agenda na data selecionada",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "linhas": 3
+      }
+    },
+    {
+      "teste": "Bloqueio de CSRF",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Validação de duração no backend",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "Cadastro de cliente e escape HTML",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "id": 7,
+        "texto_exibido": true
+      }
+    },
+    {
+      "teste": "Edição de cliente",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "id": 7
+      }
+    },
+    {
+      "teste": "Cadastro de veículo vinculado",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "veiculo": 7,
+        "cliente": 7
+      }
+    },
+    {
+      "teste": "Edição de veículo",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "veiculo": 7
+      }
+    },
+    {
+      "teste": "Proteção de exclusão com vínculo",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "Exclusão administrativa de veiculos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "id": 7,
+        "http_final": 200
+      }
+    },
+    {
+      "teste": "Exclusão administrativa de clientes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "id": 7,
+        "http_final": 200
+      }
+    },
+    {
+      "teste": "Cadastro administrativo de usuário",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "email": "novo@rota.test"
+      }
+    },
+    {
+      "teste": "Logout",
+      "resultado": "APROVADO",
+      "detalhes": "http://127.0.0.1:54337/index.php?pagina=login"
+    },
+    {
+      "teste": "Rota privada sem sessão",
+      "resultado": "APROVADO",
+      "detalhes": "http://127.0.0.1:54337/index.php?pagina=login"
+    },
+    {
+      "teste": "Login não aceita injeção SQL",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "Login do mecânico",
+      "resultado": "APROVADO",
+      "detalhes": "http://127.0.0.1:54337/index.php?pagina=ordens"
+    },
+    {
+      "teste": "Mecânico não exclui ordens",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Mecânico não exclui clientes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Mecânico não exclui veiculos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Mecânico não cadastra cliente via POST",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Mecânico não acessa usuarios",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Mecânico não acessa ordens&editar=3",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Escopo autorizado de clientes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "registro_de_outro_mecanico_oculto": "Juliana Ribeiro"
+      }
+    },
+    {
+      "teste": "Escopo autorizado de veiculos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "registro_de_outro_mecanico_oculto": "HIJ7K89"
+      }
+    },
+    {
+      "teste": "Escopo autorizado de ordens",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "registro_de_outro_mecanico_oculto": "Alinhamento e balanceamento"
+      }
+    },
+    {
+      "teste": "Mecânico atualiza execução com campos protegidos",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "registro_antes": {
+          "id": 7,
+          "veiculo_id": 1,
+          "mecanico_id": 2,
+          "descricao": "Cenário 1: revisão de demonstração",
+          "observacoes": "",
+          "inicio": "2026-11-18 09:00:00",
+          "fim": "2026-11-18 10:00:00",
+          "situacao": "agendada",
+          "criado_em": "2026-11-16 19:59:22",
+          "atualizado_em": "2026-11-16 19:59:22"
+        },
+        "registro_depois": {
+          "id": 7,
+          "veiculo_id": 1,
+          "mecanico_id": 2,
+          "descricao": "Cenário 1: revisão de demonstração",
+          "observacoes": "Diagnóstico registrado pelo mecânico.",
+          "inicio": "2026-11-18 09:00:00",
+          "fim": "2026-11-18 10:00:00",
+          "situacao": "em_andamento",
+          "criado_em": "2026-11-16 19:59:22",
+          "atualizado_em": "2026-11-16 19:59:27"
+        }
+      }
+    },
+    {
+      "teste": "Formulário inválido do mecânico retorna erro sem falhar",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Sessão de formulário inválida preserva a tela da ordem",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 403
+      }
+    },
+    {
+      "teste": "Layout a 390 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 390,
+        "overflow_documento": false,
+        "evidencia": "responsivo.png"
+      }
+    },
+    {
+      "teste": "JavaScript sem erros no navegador",
+      "resultado": "APROVADO",
+      "detalhes": []
+    },
+    {
+      "teste": "Formato inválido de campos rejeitado sem avisos PHP",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "Conflitos idênticos, internos e envolventes",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": [
+          409,
+          409,
+          409
+        ]
+      }
+    },
+    {
+      "teste": "Mesmo horário com outro mecânico",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "ordem": 10,
+        "http_final": 200
+      }
+    },
+    {
+      "teste": "Troca de mecânico com conflito preserva responsável",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 409
+      }
+    },
+    {
+      "teste": "Cancelamento libera o intervalo",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "cancelamento_http_final": 200,
+        "novo_http_final": 200
+      }
+    },
+    {
+      "teste": "Reativar ordem verifica conflito",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 409
+      }
+    },
+    {
+      "teste": "Agenda inclui intervalo do dia anterior",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http_final": 200,
+        "dia_consultado": "2026-11-20"
+      }
+    },
+    {
+      "teste": "Exclusão de ordem mantém auditoria",
+      "resultado": "APROVADO",
+      "detalhes": [
+        {
+          "acao": "cadastro",
+          "usuario_id": 1,
+          "criado_em": "2026-11-16 19:59:24"
+        },
+        {
+          "acao": "exclusao",
+          "usuario_id": 1,
+          "criado_em": "2026-11-16 19:59:28"
+        }
+      ]
+    },
+    {
+      "teste": "Data inválida rejeitada no servidor",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "E-mail duplicado é bloqueado",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "http": 422
+      }
+    },
+    {
+      "teste": "Senha preserva espaços informados",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "cadastro_http_final": 200
+      }
+    },
+    {
+      "teste": "Mecânico novo sem ordens não consulta registros de terceiros",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "mensagem": "Nenhum registro encontrado para esta consulta."
+      }
+    },
+    {
+      "teste": "Concorrência em conexões independentes",
+      "resultado": "APROVADO",
+      "detalhes": [
+        {
+          "status": 409,
+          "mensagem": "Agendamento não permitido: o mecânico selecionado já possui uma ordem de serviço nesse horário. Selecione outro horário ou mecânico."
+        },
+        {
+          "status": 200,
+          "id": 13
+        }
+      ]
+    }
+  ]
+}

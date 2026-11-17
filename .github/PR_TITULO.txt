@@ -1,0 +1,1 @@
+feat: implementa Oficina Rota com agenda e permissoes

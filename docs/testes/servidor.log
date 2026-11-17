@@ -1,0 +1,591 @@
+[Mon Nov 16 22:15:00 2026] PHP 8.2.12 Development Server (http://127.0.0.1:63491) started
+[Mon Nov 16 22:15:01 2026] 127.0.0.1:63493 Accepted
+[Mon Nov 16 22:15:01 2026] 127.0.0.1:63493 [200]: GET /index.php
+[Mon Nov 16 22:15:01 2026] 127.0.0.1:63493 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63503 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63503 [200]: GET /index.php
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63503 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63508 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63508 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63508 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63509 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63509 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63509 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63510 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63510 [404]: GET /favicon.ico - No such file or directory
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63510 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63514 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63514 [302]: POST /index.php?pagina=login
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63514 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63518 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63518 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63518 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63520 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63520 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63520 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63521 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63521 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63521 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63526 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63526 [200]: GET /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63526 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63528 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63528 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63528 Closing
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63529 Accepted
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63529 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:02 2026] 127.0.0.1:63529 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63534 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63534 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63534 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63537 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63537 [200]: GET /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63537 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63544 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63545 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63544 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63545 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63544 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63545 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63551 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63551 [200]: GET /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63551 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63554 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63554 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63554 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63555 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63555 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63555 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63560 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63560 [409]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63560 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63563 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63563 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63563 Closing
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63564 Accepted
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63564 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:03 2026] 127.0.0.1:63564 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63572 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63572 [200]: GET /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63572 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63575 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63575 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63575 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63576 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63576 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63576 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63580 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63580 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63580 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63582 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63582 [200]: GET /index.php?pagina=ordens&editar=8
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63582 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63587 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63587 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63587 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63588 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63588 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63588 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63594 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63594 [409]: POST /index.php?pagina=ordens&editar=8
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63594 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63596 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63596 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63596 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63597 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63597 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63597 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63608 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63608 [200]: GET /index.php?pagina=ordens&editar=8
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63608 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63610 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63610 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63610 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63611 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63611 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63611 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63617 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63617 [302]: POST /index.php?pagina=ordens&editar=8
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63617 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63619 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63619 [200]: GET /index.php?pagina=ordens&editar=8
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63619 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63621 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63621 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63621 Closing
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63622 Accepted
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63622 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:04 2026] 127.0.0.1:63622 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63631 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63631 [200]: GET /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63631 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63635 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63635 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63635 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63636 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63636 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63636 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63639 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63639 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63639 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63643 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63643 [200]: GET /index.php?pagina=ordens&editar=9
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63643 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63647 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63647 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63647 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63648 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63648 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63648 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63651 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63651 [200]: GET /index.php?pagina=ordens&busca=Mariana&data=2026-11-18
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63651 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63657 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63657 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63657 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63658 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63658 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63658 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63660 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63660 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63660 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63665 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63665 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63665 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63666 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63666 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63666 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63669 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63669 [200]: GET /index.php?pagina=ordens&busca=&data=&p=2
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63669 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63673 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63673 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63673 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63674 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63674 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63674 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63676 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63676 [200]: GET /index.php?pagina=agenda&data=2026-11-18
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63676 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63681 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63681 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63681 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63682 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63682 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63682 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63684 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63684 [403]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63684 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63690 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63690 [422]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63690 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63694 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63694 [200]: GET /index.php?pagina=clientes&novo=1
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63694 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63699 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63699 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63699 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63700 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63700 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63700 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63702 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63702 [302]: POST /index.php?pagina=clientes&novo=1
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63702 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63705 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63705 [200]: GET /index.php?pagina=clientes
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63705 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63709 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63711 Accepted
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63709 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63711 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63709 Closing
+[Mon Nov 16 22:15:05 2026] 127.0.0.1:63711 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63715 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63715 [200]: GET /index.php?pagina=clientes&editar=7
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63715 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63719 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63719 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63719 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63720 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63720 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63720 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63724 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63724 [302]: POST /index.php?pagina=clientes&editar=7
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63724 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63728 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63728 [200]: GET /index.php?pagina=clientes
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63728 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63732 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63733 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63732 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63733 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63732 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63733 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63737 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63737 [200]: GET /index.php?pagina=veiculos&novo=1
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63737 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63741 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63741 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63741 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63743 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63743 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63743 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63745 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63745 [302]: POST /index.php?pagina=veiculos&novo=1
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63745 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63750 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63750 [200]: GET /index.php?pagina=veiculos
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63750 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63755 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63755 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63755 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63756 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63756 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63756 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63765 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63765 [200]: GET /index.php?pagina=veiculos&editar=7
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63765 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63767 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63767 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63767 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63768 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63768 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63768 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63773 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63773 [302]: POST /index.php?pagina=veiculos&editar=7
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63773 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63777 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63777 [200]: GET /index.php?pagina=veiculos
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63777 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63779 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63779 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63779 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63780 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63780 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63780 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63787 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63787 [200]: GET /index.php?pagina=clientes
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63787 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63789 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63789 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63789 Closing
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63790 Accepted
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63790 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:06 2026] 127.0.0.1:63790 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63793 Accepted
+[Mon Nov 16 22:15:07 2026] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`oficina_rota_teste`.`veiculos`, CONSTRAINT `veiculos_ibfk_1` FOREIGN KEY (`cliente_id`) REFERENCES `clientes` (`id`) ON DELETE RESTRICT)
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63793 [422]: POST /index.php?pagina=clientes
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63793 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63801 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63801 [302]: POST /index.php?pagina=veiculos
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63801 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63803 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63803 [200]: GET /index.php?pagina=veiculos
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63803 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63811 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63811 [302]: POST /index.php?pagina=clientes
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63811 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63813 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63813 [200]: GET /index.php?pagina=clientes
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63813 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63821 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63821 [200]: GET /index.php?pagina=usuarios
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63821 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63823 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63823 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63823 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63824 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63824 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63824 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63827 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63827 [302]: POST /index.php?pagina=usuarios
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63827 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63833 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63833 [200]: GET /index.php?pagina=usuarios
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63833 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63835 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63835 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63835 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63836 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63836 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63836 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63845 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63845 [302]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63845 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63847 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63847 [200]: GET /index.php?pagina=login
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63847 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63849 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63850 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63849 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63850 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63849 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63850 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63857 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63857 [302]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63857 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63859 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63859 [200]: GET /index.php?pagina=login
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63859 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63861 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63861 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63861 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63862 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63862 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63862 Closing
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63865 Accepted
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63865 [422]: POST /index.php?pagina=login
+[Mon Nov 16 22:15:07 2026] 127.0.0.1:63865 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63869 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63869 [302]: POST /index.php?pagina=login
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63869 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63873 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63873 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63873 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63877 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63878 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63877 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63878 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63877 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63878 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63882 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63882 [403]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63882 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63886 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63886 [403]: POST /index.php?pagina=clientes
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63886 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63893 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63893 [403]: POST /index.php?pagina=veiculos
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63893 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63897 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63897 [403]: POST /index.php?pagina=clientes&novo=1
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63897 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63900 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63900 [403]: GET /index.php?pagina=usuarios
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63900 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63905 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63905 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63905 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63906 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63906 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63906 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63908 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63908 [403]: GET /index.php?pagina=ordens&editar=3
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63908 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63913 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63913 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63913 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63914 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63914 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63914 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63915 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63915 [200]: GET /index.php?pagina=clientes
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63915 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63919 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63919 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63919 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63920 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63920 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63920 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63925 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63925 [200]: GET /index.php?pagina=veiculos
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63925 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63927 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63927 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63927 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63928 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63928 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63928 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63933 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63933 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63933 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63935 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63935 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63935 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63936 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63936 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63936 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63941 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63941 [200]: GET /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63941 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63943 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63943 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63943 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63944 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63944 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63944 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63951 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63951 [302]: POST /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63951 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63953 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63953 [200]: GET /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63953 Closing
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63959 Accepted
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63959 [403]: POST /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:08 2026] 127.0.0.1:63959 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63969 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63969 [403]: POST /index.php?pagina=ordens&editar=7
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63969 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63971 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63971 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63971 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63973 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63973 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63973 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63974 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63974 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63974 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63978 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63978 [302]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63978 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63983 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63983 [200]: GET /index.php?pagina=login
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63983 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63986 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63987 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63987 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63986 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63987 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63986 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63993 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63993 [302]: POST /index.php?pagina=login
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63993 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63997 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63997 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:63997 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64003 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64004 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64003 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64004 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64003 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64004 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64006 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64006 [422]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64006 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64011 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64011 [409]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64011 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64017 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64017 [409]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64017 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64022 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64022 [409]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64022 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64025 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64025 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64025 Closing
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64027 Accepted
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64027 [200]: GET /index.php?pagina=ordens&editar=10
+[Mon Nov 16 22:15:09 2026] 127.0.0.1:64027 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64034 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64034 [409]: POST /index.php?pagina=ordens&editar=10
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64034 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64041 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64041 [302]: POST /index.php?pagina=ordens&editar=10
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64041 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64047 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64047 [200]: GET /index.php?pagina=ordens&editar=10
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64047 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64053 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64053 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64053 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64056 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64056 [200]: GET /index.php?pagina=ordens&editar=11
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64056 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64058 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64058 [409]: POST /index.php?pagina=ordens&editar=10
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64058 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64067 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64067 [302]: POST /index.php?pagina=ordens&novo=1
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64067 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64073 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64073 [200]: GET /index.php?pagina=ordens&editar=12
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64073 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64077 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64077 [200]: GET /index.php?pagina=agenda&data=2026-11-20
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64077 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64080 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64080 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64080 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64081 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64081 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64081 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64084 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64084 [302]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64084 Closing
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64087 Accepted
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64087 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:10 2026] 127.0.0.1:64087 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64105 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64105 [422]: GET /index.php?pagina=ordens&data=2026-02-30
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64105 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64109 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64109 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64109 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64110 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64110 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64110 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64111 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64111 [200]: GET /index.php?pagina=usuarios
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64111 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64113 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64113 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64113 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64114 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64114 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64114 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64117 Accepted
+[Mon Nov 16 22:15:11 2026] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'admin@rota.test' for key 'usuarios.email'
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64117 [422]: POST /index.php?pagina=usuarios
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64117 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64122 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64122 [302]: POST /index.php?pagina=usuarios
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64122 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64131 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64131 [200]: GET /index.php?pagina=usuarios
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64131 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64133 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64133 [302]: POST /index.php?pagina=ordens
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64133 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64135 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64135 [200]: GET /index.php?pagina=login
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64135 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64137 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64137 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64137 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64138 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64138 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64138 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64143 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64143 [302]: POST /index.php?pagina=login
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64143 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64151 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64151 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64151 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64156 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64156 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64156 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64157 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64157 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64157 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64159 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64159 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64159 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64164 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64164 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64164 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64165 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64165 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64165 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64169 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64169 [302]: GET /index.php?pagina=login
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64169 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64171 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64171 [200]: GET /index.php?pagina=ordens
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64171 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64173 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64173 [200]: GET /assets/estilo.css
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64173 Closing
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64174 Accepted
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64174 [200]: GET /assets/app.js
+[Mon Nov 16 22:15:11 2026] 127.0.0.1:64174 Closing

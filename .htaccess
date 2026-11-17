@@ -1,0 +1,5 @@
+Options -Indexes
+RedirectMatch 403 "(^|/)(app|src|config|database|docs|tests|\.git|\.github)(/|$)"
+<FilesMatch "(^\.|\.(sql|md|docx|py|json|log)$)">
+    Require all denied
+</FilesMatch>
