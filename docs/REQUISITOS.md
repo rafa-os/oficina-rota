@@ -22,3 +22,7 @@ Fontes lidas: DESENVOLVIMENTO DE SISTEMA.pdf (Prof.ª Noemi) e Texto colado(2026
 As permissões concretizam a expressão “conforme as permissões definidas” dos anexos. O cadastro de usuários é administrativo; não há autorregistro com escolha de perfil. Os dados de demonstração são fictícios. Horários usam America/Sao_Paulo. As evidências executadas e suas limitações estão em resultados.docx.
 
 A arquitetura separa conexão/configuração, controlador HTTP, repositório/regras de negócio e apresentação. Os dois projetos não compartilham arquivos em execução nem tabelas. Não há dependências de frontend nem de PHP.
+
+## Ambiente MySQL Server
+
+A conexão atual usa MySQL80 em 127.0.0.1:3306. O esquema foi ajustado para MySQL 8, com utf8mb4_0900_ai_ci e CHECK de intervalo válido. O Workbench e o PHP devem selecionar o mesmo banco normal; a automação usa um banco de teste separado no mesmo servidor. As credenciais locais ficam em config/local.php, fora do Git. As funções e os layouts foram preservados.

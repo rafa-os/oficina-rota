@@ -4,3 +4,4 @@ config/local.php
 .trabalho/
 __pycache__/
 !docs/testes/servidor.log
+!docs/testes/mariadb-anterior/servidor.log
