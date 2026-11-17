@@ -25,4 +25,8 @@ A arquitetura separa conexão/configuração, controlador HTTP, repositório/reg
 
 ## Ambiente MySQL Server
 
-A conexão atual usa MySQL80 em 127.0.0.1:3306. O esquema foi ajustado para MySQL 8, com utf8mb4_0900_ai_ci e CHECK de intervalo válido. O Workbench e o PHP devem selecionar o mesmo banco normal; a automação usa um banco de teste separado no mesmo servidor. As credenciais locais ficam em config/local.php, fora do Git. As funções e os layouts foram preservados.
+A conexão atual usa MySQL80 em 127.0.0.1:3306. O esquema foi ajustado para MySQL 8, com utf8mb4_0900_ai_ci e CHECK de intervalo válido. O Workbench e o PHP devem selecionar o mesmo banco normal; a automação usa um banco de teste separado no mesmo servidor. As credenciais locais ficam em config/local.php, fora do Git. As regras de negócio e as configurações de banco foram preservadas.
+
+## Apresentação simples
+
+Cabeçalho, menu de links, tabelas e formulários comuns, fonte Arial e fundo claro. Azul para Oficina Rota e verde para Ponto Motor. Os botões usam textos curtos. O CSS foi reduzido e a marcação das telas foi organizada em blocos legíveis, mantendo os arquivos existentes. A paginação recebe a rota por parâmetro. Permissões, validações, sessões, PDO, agenda e auditoria permanecem ativos.

@@ -24,6 +24,6 @@ $env:APP_URL = 'http://localhost/oficina-rafael/'
 python tests/apache.py
 ```
 
-O script verifica acesso, login, consultas e proteção dos arquivos internos, sem recriar o banco. Produz apache.json e apache.png. Para verificar também sessões independentes, defina OUTRO_URL e OUTRO_EMAIL com o endereço e a conta de demonstração do outro projeto; essa opção não é necessária para usar este sistema sozinho.
+O script verifica acesso, login, consultas, proteção dos arquivos internos, fonte Arial e telas de 1440, 768 e 390 px, sem recriar o banco. Produz apache.json, apache.png e capturas das listas, formulários e celular. Para verificar também sessões independentes, defina OUTRO_URL e OUTRO_EMAIL com o endereço e a conta de demonstração do outro projeto; essa opção não é necessária para usar este sistema sozinho.
 
-Na execução entregue: 57 verificações principais e 14 pelo Apache, totalizando 71 aprovações no MySQL Server 8.0.43, porta 3306. Os testes antigos do MariaDB permanecem identificados em pastas históricas e não entram nesse total.
+Na execução entregue: 57 verificações principais e 18 pelo Apache, totalizando 75 aprovações no MySQL Server 8.0.43, porta 3306. Os testes antigos do MariaDB permanecem identificados em pastas históricas e não entram nesse total.

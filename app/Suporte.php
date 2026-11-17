@@ -57,10 +57,10 @@ function campo(string $rotulo, string $nome, array $dados, string $tipo = 'text'
     echo '<label>' . e($rotulo) . '<input type="' . e($tipo) . '" name="' . e($nome) . '" value="' . e($dados[$nome] ?? '') . '" ' . $atributos . '></label>';
 }
 
-function selecao(string $rotulo, string $nome, array $opcoes, mixed $atual, bool $obrigatorio = true): void
+function selecao(string $rotulo, string $nome, array $opcoes, mixed $atual): void
 {
     $atual = is_scalar($atual) ? $atual : '';
-    echo '<label>' . e($rotulo) . '<select name="' . e($nome) . '" ' . ($obrigatorio ? 'required' : '') . '><option value="">Selecione</option>';
+    echo '<label>' . e($rotulo) . '<select name="' . e($nome) . '" required><option value="">Selecione</option>';
     foreach ($opcoes as $id => $nomeOpcao) {
         echo '<option value="' . e($id) . '" ' . ((string) $id === (string) $atual ? 'selected' : '') . '>' . e($nomeOpcao) . '</option>';
     }
@@ -77,15 +77,15 @@ function situacoes(): array
     return ['agendada' => 'Agendada', 'em_andamento' => 'Em andamento', 'concluida' => 'Concluída', 'cancelada' => 'Cancelada'];
 }
 
-function paginar(int $total, int $paginaAtual, array $filtros): void
+function paginar(string $pagina, int $total, int $paginaAtual, array $filtros): void
 {
     $paginas = max(1, (int) ceil($total / 5));
     echo '<nav class="paginacao" aria-label="Paginação"><span>' . $total . ' registro(s) · Página ' . $paginaAtual . ' de ' . $paginas . '</span>';
     if ($paginaAtual > 1) {
-        echo '<a href="' . e(url($GLOBALS['pagina'], $filtros + ['p' => $paginaAtual - 1])) . '">← Anterior</a>';
+        echo '<a href="' . e(url($pagina, $filtros + ['p' => $paginaAtual - 1])) . '">Anterior</a>';
     }
     if ($paginaAtual < $paginas) {
-        echo '<a href="' . e(url($GLOBALS['pagina'], $filtros + ['p' => $paginaAtual + 1])) . '">Próxima →</a>';
+        echo '<a href="' . e(url($pagina, $filtros + ['p' => $paginaAtual + 1])) . '">Próxima</a>';
     }
     echo '</nav>';
 }

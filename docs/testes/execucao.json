@@ -1,6 +1,6 @@
 {
   "projeto": "oficina-rafael",
-  "executado_em": "2026-11-16T21:54:31.144894-03:00",
+  "executado_em": "2026-11-16T22:15:13.173751-03:00",
   "fuso_agendamento": "America/Sao_Paulo",
   "banco": "oficina_rota_teste",
   "servidor_banco": {
@@ -117,7 +117,7 @@
     {
       "teste": "Login do administrador",
       "resultado": "APROVADO",
-      "detalhes": "http://127.0.0.1:60131/index.php?pagina=ordens"
+      "detalhes": "http://127.0.0.1:63491/index.php?pagina=ordens"
     },
     {
       "teste": "Cenário 1 — cadastro permitido",
@@ -133,8 +133,8 @@
           "inicio": "2026-11-18 09:00:00",
           "fim": "2026-11-18 10:00:00",
           "situacao": "agendada",
-          "criado_em": "2026-11-16 21:54:21",
-          "atualizado_em": "2026-11-16 21:54:21"
+          "criado_em": "2026-11-16 22:15:03",
+          "atualizado_em": "2026-11-16 22:15:03"
         },
         "evidencia": "cenario1.png"
       }
@@ -147,7 +147,7 @@
           "ordem_numero": 7,
           "usuario_id": 1,
           "acao": "cadastro",
-          "criado_em": "2026-11-16 21:54:21"
+          "criado_em": "2026-11-16 22:15:03"
         }
       ]
     },
@@ -178,8 +178,8 @@
           "inicio": "2026-11-18 11:00:00",
           "fim": "2026-11-18 12:00:00",
           "situacao": "agendada",
-          "criado_em": "2026-11-16 21:54:22",
-          "atualizado_em": "2026-11-16 21:54:22"
+          "criado_em": "2026-11-16 22:15:04",
+          "atualizado_em": "2026-11-16 22:15:04"
         },
         "registro_depois": {
           "id": 8,
@@ -190,8 +190,8 @@
           "inicio": "2026-11-18 11:00:00",
           "fim": "2026-11-18 12:00:00",
           "situacao": "agendada",
-          "criado_em": "2026-11-16 21:54:22",
-          "atualizado_em": "2026-11-16 21:54:22"
+          "criado_em": "2026-11-16 22:15:04",
+          "atualizado_em": "2026-11-16 22:15:04"
         },
         "mensagem": "Agendamento não permitido: o mecânico selecionado já possui uma ordem de serviço nesse horário. Selecione outro horário ou mecânico.",
         "evidencia": "cenario3.png"
@@ -228,7 +228,7 @@
       "resultado": "APROVADO",
       "detalhes": {
         "linhas": 3,
-        "url": "http://127.0.0.1:60131/index.php?pagina=ordens&busca=Mariana&data=2026-11-18"
+        "url": "http://127.0.0.1:63491/index.php?pagina=ordens&busca=Mariana&data=2026-11-18"
       }
     },
     {
@@ -341,12 +341,12 @@
     {
       "teste": "Logout",
       "resultado": "APROVADO",
-      "detalhes": "http://127.0.0.1:60131/index.php?pagina=login"
+      "detalhes": "http://127.0.0.1:63491/index.php?pagina=login"
     },
     {
       "teste": "Rota privada sem sessão",
       "resultado": "APROVADO",
-      "detalhes": "http://127.0.0.1:60131/index.php?pagina=login"
+      "detalhes": "http://127.0.0.1:63491/index.php?pagina=login"
     },
     {
       "teste": "Login não aceita injeção SQL",
@@ -358,7 +358,7 @@
     {
       "teste": "Login do mecânico",
       "resultado": "APROVADO",
-      "detalhes": "http://127.0.0.1:60131/index.php?pagina=ordens"
+      "detalhes": "http://127.0.0.1:63491/index.php?pagina=ordens"
     },
     {
       "teste": "Mecânico não exclui ordens",
@@ -436,8 +436,8 @@
           "inicio": "2026-11-18 09:00:00",
           "fim": "2026-11-18 10:00:00",
           "situacao": "agendada",
-          "criado_em": "2026-11-16 21:54:21",
-          "atualizado_em": "2026-11-16 21:54:21"
+          "criado_em": "2026-11-16 22:15:03",
+          "atualizado_em": "2026-11-16 22:15:03"
         },
         "registro_depois": {
           "id": 7,
@@ -448,8 +448,8 @@
           "inicio": "2026-11-18 09:00:00",
           "fim": "2026-11-18 10:00:00",
           "situacao": "em_andamento",
-          "criado_em": "2026-11-16 21:54:21",
-          "atualizado_em": "2026-11-16 21:54:27"
+          "criado_em": "2026-11-16 22:15:03",
+          "atualizado_em": "2026-11-16 22:15:08"
         }
       }
     },
@@ -544,12 +544,12 @@
         {
           "acao": "cadastro",
           "usuario_id": 1,
-          "criado_em": "2026-11-16 21:54:23"
+          "criado_em": "2026-11-16 22:15:05"
         },
         {
           "acao": "exclusao",
           "usuario_id": 1,
-          "criado_em": "2026-11-16 21:54:28"
+          "criado_em": "2026-11-16 22:15:10"
         }
       ]
     },
@@ -586,12 +586,12 @@
       "resultado": "APROVADO",
       "detalhes": [
         {
-          "status": 200,
-          "id": 13
-        },
-        {
           "status": 409,
           "mensagem": "Agendamento não permitido: o mecânico selecionado já possui uma ordem de serviço nesse horário. Selecione outro horário ou mecânico."
+        },
+        {
+          "status": 200,
+          "id": 13
         }
       ]
     }

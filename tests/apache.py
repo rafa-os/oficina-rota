@@ -20,7 +20,7 @@ def check(name, condition, details):
 def login(page, email):
     page.locator('[name=email]').fill(email)
     page.locator('[name=senha]').fill('Oficina@123')
-    page.get_by_role('button', name='Entrar no sistema').click()
+    page.get_by_role('button', name='Entrar').click()
 
 try:
     with sync_playwright() as p:
@@ -37,10 +37,23 @@ try:
         check('CSS público', asset.status == 200, {'http': asset.status})
         login(page, 'admin@' + DOMAIN)
         check('Login pelo módulo PHP do Apache', page.get_by_role('heading', name='Ordens de serviço', exact=True).count() == 1, {'url': page.url})
+        font = page.evaluate('getComputedStyle(document.body).fontFamily')
+        check('Fonte Arial no navegador', font.startswith('Arial'), {'fonte': font})
         page.screenshot(path=str(OUT / 'apache.png'), full_page=True)
         for route in ['clientes', 'veiculos', 'agenda', 'usuarios']:
             response = page.goto(BASE + 'public/index.php?pagina=' + route)
             check('Consulta Apache: ' + route, response.status == 200, {'http': response.status})
+            page.screenshot(path=str(OUT / (route + '.png')), full_page=True)
+        for route in ['clientes', 'veiculos', 'ordens']:
+            page.goto(BASE + 'public/index.php?pagina=' + route + '&novo=1')
+            page.screenshot(path=str(OUT / ('novo-' + route + '.png')), full_page=True)
+        for width in [1440, 768, 390]:
+            page.set_viewport_size({'width': width, 'height': 900})
+            page.goto(BASE + 'public/index.php?pagina=ordens')
+            overflow = page.evaluate('document.documentElement.scrollWidth > window.innerWidth')
+            check('Tela sem transbordamento a ' + str(width) + ' px', not overflow, {'largura': width, 'transbordamento': overflow})
+        page.screenshot(path=str(OUT / 'tela-celular.png'), full_page=True)
+        page.set_viewport_size({'width': 1440, 'height': 1000})
         other_url = os.environ.get('OUTRO_URL')
         other_email = os.environ.get('OUTRO_EMAIL')
         if other_url and other_email:

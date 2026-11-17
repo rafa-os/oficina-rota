@@ -1,6 +1,6 @@
 # Oficina Rota
 
-Sistema de gestão de oficina desenvolvido por **Rafael Oliveira de Souza** para a atividade da Prof.ª Noemi. HTML, CSS, JavaScript puro, PHP e PDO com MySQL Server. O visual é azul, com navegação superior. O projeto funciona sozinho e usa o banco `oficina_rota`.
+Sistema de gestão de oficina desenvolvido por **Rafael Oliveira de Souza** para a atividade da Prof.ª Noemi. HTML, CSS, JavaScript puro, PHP e PDO com MySQL Server. O visual é azul, com cabeçalho simples e menu de links. O projeto funciona sozinho e usa o banco `oficina_rota`.
 
 ## MySQL Server e MySQL Workbench
 
@@ -87,11 +87,13 @@ Não há bibliotecas, frameworks ou gerenciadores de pacotes necessários para r
 
 ## Testes e evidências no MySQL
 
-Foram executadas **71 verificações aprovadas em MySQL Server 8.0.43**: 57 na automação principal e 14 pelo Apache. A execução principal usou `oficina_rota_teste` no mesmo servidor 127.0.0.1:3306; a conferência Apache usou o banco normal `oficina_rota`. Os dados normais de demonstração foram preservados.
+Foram executadas **75 verificações aprovadas em MySQL Server 8.0.43**: 57 na automação principal e 18 pelo Apache. A execução principal usou `oficina_rota_teste` no mesmo servidor 127.0.0.1:3306; a conferência Apache usou o banco normal `oficina_rota`. Os dados normais de demonstração foram preservados.
 
 - Plano atualizado: `docs/plano_testes.docx`.
 - Resultados reais do MySQL: `resultados.docx`.
 - Capturas atuais: `docs/testes/cenario1.png`, `cenario2.png` e `cenario3.png`.
+- Telas de clientes, veículos, agenda e usuários: `docs/testes/clientes.png`, `veiculos.png`, `agenda.png` e `usuarios.png`.
+- Formulários e celular: `docs/testes/novo-clientes.png`, `novo-veiculos.png`, `novo-ordens.png` e `tela-celular.png`.
 - Identidade do servidor e dados conferidos: `docs/testes/execucao.json`.
 - Confirmação da conexão PHP: `docs/testes/conexao-php.json`.
 - Importação dos bancos: `docs/testes/mysql-conexao.json`.

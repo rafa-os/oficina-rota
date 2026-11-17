@@ -1,5 +1,5 @@
 {
-  "executado_em": "2026-11-16T21:57:48.059659-03:00",
+  "executado_em": "2026-11-16T22:15:08.352083-03:00",
   "testes": [
     {
       "teste": "Página inicial pelo Apache",
@@ -66,6 +66,13 @@
       }
     },
     {
+      "teste": "Fonte Arial no navegador",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "fonte": "Arial, sans-serif"
+      }
+    },
+    {
       "teste": "Consulta Apache: clientes",
       "resultado": "APROVADO",
       "detalhes": {
@@ -91,6 +98,30 @@
       "resultado": "APROVADO",
       "detalhes": {
         "http": 200
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 1440 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 1440,
+        "transbordamento": false
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 768 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 768,
+        "transbordamento": false
+      }
+    },
+    {
+      "teste": "Tela sem transbordamento a 390 px",
+      "resultado": "APROVADO",
+      "detalhes": {
+        "largura": 390,
+        "transbordamento": false
       }
     },
     {

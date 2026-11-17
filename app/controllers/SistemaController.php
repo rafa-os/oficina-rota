@@ -141,7 +141,7 @@ try {
     $erro = 'Não foi possível consultar os registros.';
     $pagina = 'erro';
 }
-$titulos = ['ordens' => 'Ordens de serviço', 'clientes' => 'Clientes', 'veiculos' => 'Veículos', 'agenda' => 'Agenda dos mecânicos', 'usuarios' => 'Usuários', 'erro' => 'Acesso indisponível', 'login' => 'Bem-vindo'];
+$titulos = ['ordens' => 'Ordens de serviço', 'clientes' => 'Clientes', 'veiculos' => 'Veículos', 'agenda' => 'Agenda', 'usuarios' => 'Usuários', 'erro' => 'Acesso indisponível', 'login' => 'Login'];
 $titulo = $titulos[$pagina] ?? 'Página não encontrada';
 if (!in_array($pagina, [...$permitidas, 'erro'], true)) {
     $pagina = 'erro';
