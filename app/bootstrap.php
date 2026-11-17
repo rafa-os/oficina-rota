@@ -21,7 +21,7 @@ try {
 } catch (PDOException $e) {
     error_log($e->getMessage());
     http_response_code(503);
-    exit('Não foi possível conectar ao banco. Confira config/banco.php e a importação do SQL descrita no README.');
+    exit('Não foi possível conectar ao banco. Confira a senha em config/local.php, a conexão com o MySQL Server e a importação pelo Workbench descrita no README.');
 }
 $_SESSION['csrf'] ??= bin2hex(random_bytes(32));
 $usuario = null;

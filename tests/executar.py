@@ -43,7 +43,22 @@ def fill_order(page, start, end, description, mechanic='2', vehicle='1'):
     page.locator('[name=descricao]').fill(description)
 
 def main():
-    info = db()
+    try:
+        info = db()
+    except Exception as exc:
+        failure = {'projeto': ROOT.name, 'executado_em': datetime.now(timezone(timedelta(hours=-3))).isoformat(), 'estado': 'BLOQUEADO', 'banco': ENV['DB_NAME'], 'motivo': 'Não foi possível preparar o banco no MySQL Server. Confira config/local.php, credenciais e permissões de criação de banco.', 'erro': str(exc), 'testes': []}
+        (OUT / 'execucao.json').write_text(json.dumps(failure, ensure_ascii=False, indent=2), encoding='utf-8')
+        raise
+    check('Servidor MySQL identificado', 'MySQL' in info['distribuicao'] and 'MariaDB' not in info['versao'], info)
+    collation = scalar('SELECT DEFAULT_COLLATION_NAME FROM information_schema.SCHEMATA WHERE SCHEMA_NAME = ?', [ENV['DB_NAME']])
+    check('Banco com collation do MySQL 8', collation == 'utf8mb4_0900_ai_ci', {'collation': collation})
+    before_count = scalar('SELECT COUNT(*) FROM ordens')
+    constraint_blocked = False
+    try:
+        db("INSERT INTO ordens (veiculo_id, mecanico_id, descricao, observacoes, inicio, fim, situacao) VALUES (1, 2, 'Intervalo inválido direto no banco', '', '2026-11-18 10:00:00', '2026-11-18 09:00:00', 'agendada')")
+    except RuntimeError as exc:
+        constraint_blocked = '3819' in str(exc) and 'chk_ordens_periodo' in str(exc)
+    check('MySQL rejeita intervalo inválido por CHECK', constraint_blocked and scalar('SELECT COUNT(*) FROM ordens') == before_count, {'constraint': 'chk_ordens_periodo', 'erro_mysql_esperado': 3819, 'quantidade_preservada': scalar('SELECT COUNT(*) FROM ordens')})
     lint = []
     for file in ROOT.rglob('*.php'):
         r = subprocess.run([PHP, '-l', str(file)], capture_output=True, text=True)

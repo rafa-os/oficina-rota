@@ -1,25 +1,29 @@
-# Reexecutar a verificação
+# Reexecutar no MySQL Server
 
-Os testes são opcionais para executar o sistema. Eles usam Python 3.10+, Playwright e Google Chrome instalado. O backend da aplicação não depende dessas ferramentas.
+Pré-requisitos: MySQL Server 8.0.16+ ativo, config/local.php com credenciais válidas, PHP com pdo_mysql, Python 3.10+, Playwright e Google Chrome. Essas ferramentas Python são usadas somente na verificação; a aplicação não depende delas.
 
 ```powershell
 python -m pip install playwright
 $env:PHP_EXE = 'C:/xampp/php/php.exe'
-$env:DB_PORT = '3306'
+& $env:PHP_EXE tests/conexao.php
 python tests/executar.py
 ```
 
-Configure também DB_HOST, DB_USER e DB_PASS se necessário. O script recria exclusivamente o banco de teste cujo nome termina em `_teste`, importa o SQL, inicia um servidor PHP temporário, executa o fluxo no navegador e confere o banco diretamente. O banco normal de demonstração não é alterado. Para Edge, defina BROWSER_CHANNEL=msedge.
+A configuração de host, porta e credenciais vem de config/banco.php e config/local.php. DB_HOST, DB_PORT, DB_USER e DB_PASS podem sobrescrevê-la. A automação define apenas DB_NAME=`oficina_rota_teste`. Ela recria exclusivamente esse banco de teste, importa o SQL, inicia um servidor PHP temporário, executa o fluxo no navegador e confere a persistência diretamente. O banco normal `oficina_rota` é preservado. A conta deve ter permissões de CREATE/DROP/DDL/DML nesse banco de teste.
 
-Os arquivos docs/testes/execucao.json, servidor.log e imagens são sobrescritos com a nova execução. Os DOCX correspondem à execução entregue e devem ser atualizados após novos testes. banco_teste.php só executa no PHP CLI.
+Antes de recriar o banco, o script consulta a versão/distribuição e recusa MariaDB. Se a conexão falhar, registra estado BLOQUEADO e zero cenários executados. As verificações adicionais conferem a collation e tentam inserir diretamente um intervalo inválido, esperando a rejeição CHECK do MySQL (erro 3819).
+
+Os JSON, log e PNG em docs/testes são substituídos pela nova execução. Os DOCX representam a execução entregue e devem ser atualizados após novos testes. Para Edge, defina BROWSER_CHANNEL=msedge. banco_teste.php, concorrencia.php e conexao.php executam somente via PHP CLI.
 
 ## Apache
 
-Com o projeto já instalado no Apache do XAMPP, a verificação HTTP complementar pode ser reexecutada:
+Instale o projeto conforme o README e mantenha MySQL80 em execução. Então execute:
 
 ```powershell
 $env:APP_URL = 'http://localhost/oficina-rafael/'
 python tests/apache.py
 ```
 
-Esse script não recria o banco. Confere acesso, login, consultas e bloqueio dos arquivos privados; grava apache.json e apache.png. Para conferir também a independência entre dois sistemas, defina OUTRO_URL e OUTRO_EMAIL com a URL e a conta de demonstração do segundo projeto. Sem essas duas variáveis, apenas os 13 testes do projeto atual são executados. A execução entregue incluiu esse teste adicional, totalizando 14 verificações no Apache.
+O script verifica acesso, login, consultas e proteção dos arquivos internos, sem recriar o banco. Produz apache.json e apache.png. Para verificar também sessões independentes, defina OUTRO_URL e OUTRO_EMAIL com o endereço e a conta de demonstração do outro projeto; essa opção não é necessária para usar este sistema sozinho.
+
+Na execução entregue: 57 verificações principais e 14 pelo Apache, totalizando 71 aprovações no MySQL Server 8.0.43, porta 3306. Os testes antigos do MariaDB permanecem identificados em pastas históricas e não entram nesse total.
